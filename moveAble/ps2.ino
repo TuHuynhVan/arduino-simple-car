@@ -11,7 +11,7 @@
 #define PS2_SEL        10  //16
 #define PS2_CLK        12  //17
 
-/******************************************************************
+/*****************************************************************ch*
    select modes of PS2 controller:
      - pressures = analog reading of push-butttons
      - rumble    = motor rumbling
@@ -39,6 +39,7 @@ void setup() {
     pinMode(7, OUTPUT);
     pinMode(8, OUTPUT);
     pinMode(9, OUTPUT);
+    pinMode(11, INPUT_PULLUP);
 
     delay(300);  //added delay to give wireless ps2 module some time to startup, before configuring it
 
